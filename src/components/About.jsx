@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import ButtonFlip from "./ButtonFlip";
 import ButtonIndicator from "./ButtonInicator";
-import SliderSite from "./SliderSite";
 
 const AboutWrapper = styled.section`
   box-sizing: border-box;
