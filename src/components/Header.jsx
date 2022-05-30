@@ -39,7 +39,7 @@ function Header() {
           </h1>
           <p>FRONT-END WEB DEVOLOPER</p>
 
-          <img src={avatar} alt="avatar" />
+          <img src={avatar} height="300" width="300" alt="avatar" />
         </div>
       </Name>
     </Container>

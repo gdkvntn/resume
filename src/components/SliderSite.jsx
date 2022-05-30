@@ -13,6 +13,8 @@ const SliderWrapper = styled.div`
     border-radius: 20px;
   }
   img {
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
     transition: 0.5s ease-in;
     cursor: pointer;
@@ -97,12 +99,7 @@ export default function SliderSite() {
     SLIDE.push(
       <SwiperSlide key={`slide${i}`} tag="li">
         <a href={SLI[i].href} target="_blank" rel="noreferrer">
-          <img
-            width="100%"
-            height="100%"
-            src={`./img/site${i + 1}.webp`}
-            alt={`slide ${i + 1}`}
-          />
+          <img src={`./img/site${i + 1}.webp`} alt={`slide ${i + 1}`} />
         </a>
       </SwiperSlide>
     );
