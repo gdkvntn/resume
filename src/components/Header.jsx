@@ -1,60 +1,48 @@
-import ParticlesBg from 'particles-bg'
-import styled from 'styled-components';
-const avatar ='./img/avatar.webp'
-const screenHeight = window.innerHeight
+import styled from "styled-components";
+import NavBar from "./NavBar";
+import SliderSite from "./SliderSite";
+const avatar = "./img/avajpg.webp";
 
+const Container = styled.header`
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./img/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+`;
 
-const List = styled.ul`
-    display: flex;
-    justify-content: center;
-
-    li{
-        padding: 0;
-        font-size: 16px;
-        font-weight: 700;
-        margin-right: 20px;
-    }
-   
-    
-`
 const Name = styled.div`
-display: flex;
-height: 80%;
-   img{
-       margin-top: 40px;
-       border: solid 4px ;
-       max-width: 300px;
-       height: 300px;
-       border-radius: 50%;
-   }
-`
+  margin-top: 64px;
+  display: flex;
+  height: 80%;
+  img {
+    margin-top: 40px;
+    border: solid 4px #ffffff;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+  }
+`;
 
 function Header() {
   return (
-    <header style={{
-        height:screenHeight,
-        }}>
-      <ParticlesBg color='#68237F' type='cobweb' bg={true}/>
-      <nav style={{padding:'40px 0'}}>
-          <List>
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>RESUME</li>
-              <li>WORKS</li>
-              <li style={{marginRight:0}}>CONTACT</li>
-          </List>
-      </nav>
+    <Container id="home">
+      <NavBar />
       <Name>
-          <div style={{margin:'auto'}}>
-          <p style={{marginBottom:'10px'}}>Hello, i'm</p>
-          <h1 style={{marginBottom:'10px'}}>Anton</h1>
+        <div style={{ margin: "auto" }}>
+          <p style={{ marginBottom: "10px" }}>Hello, i'm</p>
+          <h1 style={{ marginBottom: "10px", color: "#ffffff" }}>
+            Anton Hudkou
+          </h1>
           <p>FRONT-END WEB DEVOLOPER</p>
 
           <img src={avatar} alt="avatar" />
-          </div>
+        </div>
       </Name>
-
-    </header>
+    </Container>
   );
 }
 
