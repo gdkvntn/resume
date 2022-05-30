@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import NavBar from "./NavBar";
-import SliderSite from "./SliderSite";
+
 const avatar = "./img/avajpg.webp";
 
 const Container = styled.header`
