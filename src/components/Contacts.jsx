@@ -52,16 +52,16 @@ export default function Contacts() {
       <Wrapper>
         <Title>Contacts</Title>
         <Link href="https://t.me/gdkvntn" target="_blank">
-          <img src={telegram} alt="telegram" />
+          <img src={telegram} alt="telegram" width="80" height="80" />
         </Link>
         <Link
           href="https://www.linkedin.com/in/anton-hudkou-365837239/"
           target="_blank"
         >
-          <img src={linked} alt="linkedin" />
+          <img src={linked} alt="linkedin" width="80" height="80" />
         </Link>
         <Link href="mailto: antonhudkou@gmail.com" target="_blank">
-          <img src={email} alt="email" />
+          <img src={email} alt="email" width="80" height="80" />
         </Link>
       </Wrapper>
     </Container>
