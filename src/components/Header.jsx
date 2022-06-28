@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import NavBar from "./NavBar";
 
-const avatar = "./img/ava.webp";
+const avatar = "./img/ava.jpg";
 
 const Container = styled.header`
   display: flex;
